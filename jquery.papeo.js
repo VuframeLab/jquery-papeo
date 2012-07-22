@@ -6,8 +6,7 @@
       var settings = $.extend( {
         'api_domain' : 'papeo.com',
         'https': false,
-        'tumbnails': false,
-        'loading_text': 'loading ...'
+        'tumbnails': false
       }, options);
 
       var api_url = (settings['https'] ? 'https://' : 'http://') +
@@ -53,9 +52,6 @@
       } else {
         $.error( 'Your restaurant_id has to be given' );
       }
-      $(this).each(function() {
-        $(this).html('<div class="papeo-loading">' + settings['loading_text'] + '</div>')
-      });
       return this;
     }
   };

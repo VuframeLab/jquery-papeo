@@ -31,3 +31,12 @@ Add the following snippet to the page you want to display your menu on.
   });
 </script>
 ```
+
+
+## EXTRAS
+
+If you want to add a loading message just place it into the html container like:
+
+```html
+<div id="papeo_menu">loading...</div>
+```
